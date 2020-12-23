@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas Historias</title>
+    <link rel="icon" href="../imagens/icone.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nova-historia.css">
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Personagens</h1>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="../index.html">
+                <img class="titulo" src="../imagens/logo.png" alt="a logo do site." width="150" height="75">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historia.html">Historia <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="personagens.html">Personagens</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="nova-historia.html">Novas Historias</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>nova historia</h2>
+
+        <section>
+            <form id="nova-historia">
+                <div class="row">
+
+                    <div class="col-md-7 ta-1">
+                        <div class="">
+                            <label for="escrevaHistoria"> Escreva a historia!</label>
+                            <textarea id="escrevaHistoria" name="escrevaHistoria"></textarea>
+                        </div>
+                        <p id="erro-historia"></p>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <img value="  " class="imge" id="interrogacao" src="../imagens/interroga.png" alt="interrogação" width="100% " height="mr-auto">
+                        <div>
+                            <label class="butao" for="desenho" id="butao-desenho">Envie um desenho</label>
+                            <label class="butao" for="enviar-personagem" id="butao-enviar">Salvar personagen</label>
+                        </div>
+                    </div>
+
+                    <input type="file" id="desenho" name="desenho" accept="image" placeholder="envie uma imagem">
+                    <input id="enviar-personagem" name="enviar-personagem" type="submit">
+
+                </div>
+            </form>
+        </section>
+
+        <div class="row" id="desenho-do-usuario"></div>
+
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>&copy; Werbeth Pereira Veras.</h3>
+                Este site foi feito por um motivo ate besta o eu tinha que fazer um trabalho da faculdade e resolvi fazer um sobre meus desenhos e eu tive a ajuda de varios colegas da faculdade e do professor apesar de ser algo que enão era um projeto pessoal era algo
+                que eu realmente queria fazer e por isso eu fiz que deu um certo trabalho mas agradeço por sua participação.
+            </div>
+
+            <div class="col-md-5">
+
+                <ul class="redes-sociais">
+                    <li>
+                        <a id="email" href="mailto:wer.beth.buro@gmail.com" target="_blank"><img src="../imagens/email.png" alt="Email" width="30" height="30"></a>
+                    </li>
+                    <li>
+                        <a id="whats" href="https://wa.me/qr/7NTUEBBWYUOUH1" target="_blank"><img src="../imagens/whats.png" alt="Whatsapp" width="30" height="30"></a>
+                    </li>
+                    <li>
+                        <a id="discord" href="https://discord.gg/r72EpMAK" target="_blank"><img src="../imagens/discord.png" alt="Discord" width="30" height="30"></a>
+                    </li>
+                    <li>
+                        <a id="facebook" href="https://www.facebook.com/werbteh.pereiraveras/" target="_blank"><img src="../imagens/facebook.png" alt="Facebook" width="30" height="30"></a>
+                    </li>
+                    <li>
+                        <a id="instagram" href="https://www.instagram.com/werbteh/?hl=pt-br" target="_blank"><img src="../imagens/instagram.png" alt="Instagram" width="30" height="30"></a>
+                    </li>
+                </ul>
+
+                <a id="suba-ao-topo" href="#"><button id="butao-topo"><img  src="../imagens/butao-topo.png" alt="butão que leva ate o topo" width="30" height="mr-auto"></button></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/jquery/jquery.js "></script>
+    <script src="../js/popper/popper.js "></script>
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js "></script>
+    <script src="../js/jquery/jQuery-Mask-Plugin-master/src/jquery.mask.js "></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/nova-historia.js"></script>
+
+</body>
+
+</html>

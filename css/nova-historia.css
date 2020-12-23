@@ -1,0 +1,54 @@
+label {
+    text-indent: 0;
+    display: block;
+    font-size: 20px;
+    color: aquamarine;
+    text-align: center;
+}
+
+#enviar-personagem,
+#desenho {
+    position: absolute;
+    left: -99900px;
+    opacity: 0;
+    float: right;
+    width: auto;
+}
+
+input {
+    background-color: white;
+}
+
+#erro-historia {
+    color: red;
+    text-indent: 0px;
+    font-size: 20px;
+}
+
+#escrevaHistoria {
+    width: 100%;
+    height: 400px;
+    text-indent: 0px;
+    color: aqua;
+    background-color: rgba(47, 79, 79, 0.253);
+    border: solid darkslategrey 10px;
+    border-radius: 5%;
+}
+
+#interrogacao {
+    max-width: 300px;
+}
+
+.butao {
+    margin-top: 20px;
+    background-color: rgb(29, 65, 143);
+    border: solid royalblue;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.butao:hover {
+    background-color: rgb(53, 80, 199);
+}

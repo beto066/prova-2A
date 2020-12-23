@@ -1,0 +1,247 @@
+body {
+    background-image: url('../imagens/background.png');
+    font-family: "time new roman", georgia, serif;
+}
+
+.navbar {
+    margin-top: 0px;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+header {
+    background-color: #343a40;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: aqua;
+    font-size: 30px;
+}
+
+main {
+    margin: 20px;
+    border: solid rgb(34, 20, 43);
+    background-color: rgb( 34, 20, 43, 0.9);
+    padding: 20px;
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+    color: aquamarine;
+}
+
+main p {
+    margin-top: 20px;
+}
+
+.col-md-7,
+.col-md-12 {
+    border: solid rgb(20, 17, 17);
+    border-width: 6px;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(99, 99, 99);
+    border-radius: 10px;
+}
+
+.col-md-3 {
+    margin: 5px;
+}
+
+.row {
+    margin: 10px;
+}
+
+.imge {
+    transition-property: left;
+    transition-duration: 2s;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(20, 17, 17);
+    border-width: 6px;
+    display: block;
+    align-items: center;
+    background-color: aqua;
+    max-width: 230%;
+}
+
+.foco {
+    position: relative;
+    left: -15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 130%;
+    box-shadow: 0 0 0 999999px rgba(0, 0, 0, 0.6);
+    animation: focar 2s;
+}
+
+@keyframes focar {
+    0% {
+        left: 0;
+        width: 250px;
+    }
+    50% {
+        left: -15%;
+    }
+    100% {
+        width: 130%;
+    }
+}
+
+.alerta1 p {
+    text-align: center;
+    color: red;
+}
+
+.alerta2 p {
+    font-size: 20px;
+    color: red;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 20px;
+    color: aqua;
+    text-align: center;
+}
+
+#butao-topo:hover {
+    background-color: rgba(23, 20, 23);
+    border-color: rgb(50, 50, 50);
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 20px;
+}
+
+#butao-topo {
+    border: solid white 3px;
+    background-color: black;
+    border: solid rgba(255, 255, 255, 0.459);
+    border-radius: 5px;
+}
+
+@media (min-width:500px) {
+    main {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+        padding: 30px;
+    }
+}
+
+@media(min-width:768px) {
+    .foco {
+        z-index: 9999;
+        position: absolute;
+        left: -130%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        max-height: 600px;
+        width: 300%;
+        max-width: 450px;
+        box-shadow: 0 0 0 999999px rgba(0, 0, 0, 0.6);
+        animation: focarPc 2s;
+    }
+    @keyframes focarPc {
+        0% {
+            left: 0%;
+            width: 100%;
+        }
+        50% {
+            left: -130%;
+        }
+        100% {
+            width: 300%;
+        }
+    }
+    .ta-1 {
+        max-height: 600px;
+        overflow-y: scroll;
+    }
+    .ta-2 {
+        max-height: 900px;
+        overflow-y: scroll;
+    }
+}
+
+@media (min-width:960px) {
+    main {
+        margin: 5% 10% 5% 10%;
+        width: 80%;
+        text-indent: 60px;
+        font-size: 30px;
+        padding: 20px 80px 20px 80px;
+    }
+    .nav-item,
+    .col-md-7 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:370px) {
+    p {
+        font-size: 16px;
+    }
+    .imge {
+        position: relative;
+        left: -10%;
+        width: 120%;
+        height: auto;
+    }
+    .foco {
+        z-index: 9999;
+        position: relative;
+        left: -30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 160%;
+        box-shadow: 0 0 0 999999px rgba(0, 0, 0, 0.6);
+        animation: focarMoba 2s;
+    }
+    @keyframes focarMoba {
+        0% {
+            width: 100%;
+            left: 0;
+        }
+        80% {
+            left: -30%;
+        }
+        100% {
+            width: 160%;
+        }
+    }
+    .ta-1,
+    .ta-2 {
+        overflow-y: scroll;
+    }
+}
