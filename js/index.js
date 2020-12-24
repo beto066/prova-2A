@@ -1,7 +1,3 @@
-var tamanho2 = document.querySelectorAll(".ta-2");
-
-var tamanho1 = document.querySelectorAll(".ta-1");
-
 var classAnt;
 
 booleano = false;
@@ -17,14 +13,6 @@ desfocar.addEventListener("click", function(event) {
 
         removeClass.forEach(elem => {
             elem.classList.remove("foco");
-        });
-
-        tamanho1.forEach(indice1 => {
-            indice1.style.height = null;
-        });
-
-        tamanho2.forEach(indice2 => {
-            indice2.style.height = null;
         });
 
         booleano = false;
@@ -46,14 +34,6 @@ almentarTamanho.forEach(reg => {
         img.classList.add("foco");
 
         img = null;
-
-        tamanho1.forEach(indice1 => {
-            indice1.style.height = "600px";
-        });
-
-        tamanho2.forEach(indice2 => {
-            indice2.style.height = "900px";
-        });
 
         booleano = true;
 

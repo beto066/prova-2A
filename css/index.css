@@ -79,8 +79,8 @@ main p {
     border-width: 6px;
     display: block;
     align-items: center;
-    background-color: aqua;
     max-width: 230%;
+    text-indent: 0;
 }
 
 .foco {
@@ -185,10 +185,12 @@ li {
     .ta-1 {
         max-height: 600px;
         overflow-y: scroll;
+        min-height: 336px;
     }
     .ta-2 {
         max-height: 900px;
         overflow-y: scroll;
+        min-height: 672px;
     }
 }
 
